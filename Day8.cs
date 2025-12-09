@@ -8,7 +8,7 @@ public class Day8
 
     public Day8()
     {
-        var input = new StreamReader("inputs/day8.txt")!.ReadToEnd().Replace("\r", "");
+        var input = new StreamReader("inputs/day8.txt")!.ReadToEnd();
         junctions = [.. input.Split('\n').Select(l => { var s = l.Split(',').Select(float.Parse).ToArray(); return new Vector3(s[0], s[1], s[2]); })];
     }
 
